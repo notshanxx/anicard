@@ -1,7 +1,7 @@
 
 # Anicard
 
-Create simple cards with anime pictures and information on it.
+Create simple cards with anime cover and information on it.
 <br><br>[Anicard](https://anicard.web.app/)
 
 
