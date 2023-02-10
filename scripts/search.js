@@ -130,13 +130,13 @@ function generateSearchHTML(resultItems) {
     <title>Search Result for: ${userQuery}</title>
 
     
-    <link rel="stylesheet" href="styles/pagination.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/spinners/spinner.css" />
-    <link rel="stylesheet" href="styles/spinners/cube-spinner.css" />
-    <link rel="stylesheet" href="styles/rating-circle/circle-bar.css" />
-    <link rel="stylesheet" href="styles/spinners/searching-loader.css" />
-    <link rel="stylesheet" href="styles/search-result.css" />
+    <link rel="stylesheet" href="./styles/pagination.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/spinners/spinner.css" />
+    <link rel="stylesheet" href="./styles/spinners/cube-spinner.css" />
+    <link rel="stylesheet" href="./styles/rating-circle/circle-bar.css" />
+    <link rel="stylesheet" href="./styles/spinners/searching-loader.css" />
+    <link rel="stylesheet" href="./styles/search-result.css" />
     
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -235,10 +235,10 @@ function generateSearchHTML(resultItems) {
 
     
     
-    <script src="scripts/pagination.js"></script>
-    <script src="scripts/rating-circle/circle-bar.js"></script>
-    <script src="scripts/search.js"></script>
-    <script src="scripts/script.js"></script>
+    <script src="./scripts/pagination.js"></script>
+    <script src="./scripts/rating-circle/circle-bar.js"></script>
+    <script src="./scripts/search.js"></script>
+    <script src="./scripts/script.js"></script>
     
     
 

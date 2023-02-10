@@ -6,8 +6,8 @@ async function getTopAnime() {
     })
     .then((anime) => {
       // console.log(anime)
-      document.getElementById("cube-spinner").style.display = 'block'
-      document.getElementById("popular-anime-container").style.display = 'none'
+      document.getElementById("cube-spinner").style.display = "block";
+      document.getElementById("popular-anime-container").style.display = "none";
       // console.log(anime.data.rating)
       // console.log(anime.data)
       anime.data.forEach((element) => {
@@ -24,36 +24,27 @@ async function getTopAnime() {
                 <!-- Value automatically updates based on data-value set above -->	
                 <text x="50" y="50" text-anchor="middle" dominant-baseline="central" font-size="20"></text>	
               </svg>
-        `
-        ratingDiv.innerHTML = ratingbar
-        
+        `;
+        ratingDiv.innerHTML = ratingbar;
+
         img.src = element.images.webp.large_image_url;
         par.textContent = element.title;
-        
-        ratingDiv.setAttribute("class", "anime-rating")
+
+        ratingDiv.setAttribute("class", "anime-rating");
         div.setAttribute("class", "anime-result");
-        img.setAttribute("id", "poster-img")
+        img.setAttribute("id", "poster-img");
         img.setAttribute("alt", element.title);
-       
-        
 
         // img.onload = function() {
         //   cubeSpinner.style.display = "none";
         //   img.style.display = "block";
         // };
-        
-        div.appendChild(ratingDiv)
+
+        div.appendChild(ratingDiv);
         div.appendChild(img);
-        div.appendChild(par);      
-                                                                                                                                                              
+        div.appendChild(par);
 
         div.addEventListener("click", () => getAnimeInfo(element.mal_id));
-
-       
-
-
-        
-
 
         document.getElementById("popular-anime-container").appendChild(div);
 
@@ -69,21 +60,20 @@ async function getTopAnime() {
         // console.log(element.images.webp.image_url)
         // console.log(element.title)
       });
-      document.getElementById("cube-spinner").style.display = 'none'
-      document.getElementById("popular-anime-container").style.display = 'grid'
+      document.getElementById("cube-spinner").style.display = "none";
+      document.getElementById("popular-anime-container").style.display = "grid";
       // displayRatingBar()
-    }
-    )}
-    window.onload = () => {
-      // const animeCover = document.querySelectorAll("#anime-cover")
-      getTopAnime();
-      // if(animeCover){
-      //   console.log('loaded')
-      //   animeCover.complete = ()=> {
-      //     document.querySelectorAll("#cube-spinner").style.display = 'none'
-      //   }
-      // }else{
-      //   console.log('no')
-      // }
-      
-    }
+    });
+}
+window.onload = () => {
+  // const animeCover = document.querySelectorAll("#anime-cover")
+  getTopAnime();
+  // if(animeCover){
+  //   console.log('loaded')
+  //   animeCover.complete = ()=> {
+  //     document.querySelectorAll("#cube-spinner").style.display = 'none'
+  //   }
+  // }else{
+  //   console.log('no')
+  // }
+};
