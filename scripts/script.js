@@ -145,7 +145,7 @@ async function getAnimeInfo(ANIME_ID) {
           </div>
         </main>
 
-        <script src="scripts/script.js"></script>
+        <script src="./scripts/script.js"></script>
         <script>
         const rangeSlider = document.getElementById('rangeSlider');
         const animeCover = document.getElementById("anime-cover-container")
