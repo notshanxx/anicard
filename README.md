@@ -2,7 +2,7 @@
 # Anicard
 
 Create simple cards with anime cover and information on it.
-<br><br>[Anicard](https://anicard.web.app/)
+<br><br>[Anicard](https://notshanxx.github.io/anicard/)
 
 
 <br>
