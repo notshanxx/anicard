@@ -45,9 +45,9 @@ async function getSearchResult() {
 
   userQuery = searchValue;
   const response = await fetch(
-    `https://api.jikan.moe/v4/anime?q=${searchValue}&limit=10&type=movie,tv`
+    `https://api.jikan.moe/v4/anime?q=${searchValue}&limit=10&type=movie&tv`
   );
-  queryLink = `https://api.jikan.moe/v4/anime?q=${searchValue}&limit=10&type=movie,tv`;
+  queryLink = `https://api.jikan.moe/v4/anime?q=${searchValue}&limit=10&type=movie&tv`;
   if(response.ok){
     const data = await response.json();
     generateResult(data);
